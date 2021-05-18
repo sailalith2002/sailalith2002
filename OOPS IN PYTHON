@@ -1,1 +1,33 @@
-
+class triangle:
+      a=int(input("ENTER SIDE 1 : "))
+      b=int(input("ENTER SIDE 2 : "))
+      c=int(input("ENTER SIDE 3 : "))
+      def area(self):
+        self.s = (self.s1 +self.s2 +self.s3) / 2
+        self.x = (self.s*(self.s-self.s1)*(self.s-self.s2)*(self.s-self.s3)) ** 0.5
+        return self.x
+class equvi(triangle):
+  def Area(self):
+    self.s1=self.a 
+    self.s2=self.a 
+    self.s3=self.a 
+    print("THE AREA OF A EQUVILATRAL TRIANGLE IS :",self.area())
+class Isoceles(triangle):
+  def Area(self):
+    self.s1=self.b 
+    self.s2=self.b
+    self.s3=self.c
+    print("THE AREA OF A Isoceles TRIANGLE IS :",self.area())
+class scalene(triangle):
+  def Area(self):
+    self.s1=self.a
+    self.s2=self.b 
+    self.s3=self.c 
+    print("THE AREA OF A scalene TRIANGLE IS :",self.area())
+            
+E=equvi()
+E.Area()
+I=Isoceles()
+I.Area()
+S=scalene()
+S.Area()
